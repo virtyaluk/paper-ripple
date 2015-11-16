@@ -1,0 +1,12 @@
+node_modules/
+test/
+.DS_Store
+.travis.yml
+.codeclimate.yml
+.eslintrc
+bower.json
+.jshintrc
+.idea/
+bower_componenets/
+media/
+docs/
