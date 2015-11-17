@@ -1,0 +1,17 @@
+{
+    "destination": "./docs",
+    "index": "./README.md",
+    "package": "./package.json",
+    "title": "PaperRipple",
+    "unexportIdentifier": true,
+    "plugins": [
+        {
+            "name": "esdoc-es7-plugin"
+        }
+    ],
+    "test": {
+        "type": "mocha",
+        "source": "./test"
+    },
+    "lint": true
+}
