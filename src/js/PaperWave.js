@@ -40,7 +40,6 @@ class PaperWave {
      *     paperWave.remove();
      * }
      */
-    //constructor(paperRipple) {
     constructor({ $, recenters = false, center = false, initialOpacity = 0.25, opacityDecayVelocity = 0.8 }) {
         /**
          * Gets or sets the color of the wave.
@@ -365,8 +364,7 @@ class PaperWave {
      * @returns {PaperWave} Current instance for method chaining.
      */
     downAction(event = null) {
-        let containerCenter = this.containerRect.center,
-            { x, y, clientX, clientY } = event;
+        let containerCenter = this.containerRect.center;
 
         this.resetDefaults();
 
@@ -374,8 +372,8 @@ class PaperWave {
         this.startPosition = this.center || !event ?
             containerCenter :
             {
-                x: (x || clientX) - this.containerRect.boundingRect.left,
-                y: (y || clientY) - this.containerRect.boundingRect.top
+                x: (event.clientX || event.x) - this.containerRect.boundingRect.left,
+                y: (event.clientY || event.y) - this.containerRect.boundingRect.top
             };
         this.endPosition = this.recenters ? containerCenter : this.endPosition;
         this.maxRadius = this.containerRect.distanceToFarthestCorner(this.startPosition);
