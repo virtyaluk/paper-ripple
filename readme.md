@@ -1,5 +1,6 @@
 <h1 align="center">
-	<img width="256" src="https://raw.githubusercontent.com/virtyaluk/paper-ripple/master/media/paper-ripple.png" alt="mutation-watcher">
+	<img width="256" src="https://raw.githubusercontent.com/virtyaluk/paper-ripple/master/media/paper-ripple.png" alt="mutation-watcher" style="clear: right;">
+<br/>
 PaperRipple
 
 </h1>
@@ -12,12 +13,12 @@ PaperRipple
 
 ##### Bower:
 
-````sh
+```bash
 $ bower install paper-ripple
-````
+```
 
 ##### NPM:
-```sh
+```bash
 $ npm install paper-ripple --save
 ```
 
@@ -32,14 +33,14 @@ Live example at [codepen](http://codepen.io/virtyaluk/pen/BoMXKM).
 First, you need to include **PaperRipple** JS and CSS files to your HTML-page.
 
 Assume, you have next HTML:
-````markup
+````html
 <button class="paper-button">button</button>
 <button class="paper-button blue-text">button</button>
 <button class="paper-button orange-text">button</button>
 ````
 
 Your JS will look like:
-````js
+```js
 // // Getting all the buttons
 var button = document.querySelectorAll('button.paper-button');
 
@@ -60,7 +61,7 @@ var button = document.querySelectorAll('button.paper-button');
 		ripple.upAction();
 	});
 });
-````
+```
 
 __NOTE:__ It's important that each element you add the ripple to must be relative position.
 
@@ -68,21 +69,21 @@ If you prefer to work with modules in JS, **PaperRipple** exports itself in AMD,
 
 Even more, if you prefer to work with jQuery you may find jQuery plugin based on **PaperRipple** under `dist` folder. So, the previous example may be simplified to the next:
 
-````js
+```js
 $('button.paper-button').paperRipple();
-````
+```
 
 ### Configuration
 
 You may pass additional options to the constructor to control **PaperRipple** behavior:
 
-````js
+```js
 var ripple = new PaperRipple(cfg);
-````
+```
 
 If you have DOM element you want to use as **PaparRipple** element, pass it to the constructor. But be careful, **PaperRipple** element must follow next structure:
 
-````markup
+```html
 <div class="paper-ripple">
 	<!-- optional -->
 	<div class="paper-ripple__background"></div>
@@ -90,14 +91,14 @@ If you have DOM element you want to use as **PaparRipple** element, pass it to t
 	<!-- optional -->
 	<div class="paper-ripple__waves"></div>
 </div>
-````
+```
 
-````js
+```js
 var rippleEl = document.querySelector('.paper-ripple'),
 	ripple = new PaperRipple(rippleEl);
 
 assert(ripple.$ === rippleEl); // true
-````
+```
 
 Or you may pass object containing next options:
 
@@ -107,40 +108,40 @@ Or you may pass object containing next options:
 * `center`: *Boolean* - Defaults to `false`. If `true`, waves will center inside its container.
 * `target`: *HTMLElement* - Defaults to `null`. Target DOM element as the container for the waves.
 
-````js
+```js
 var ripple = new PaperRipple({
 	initialOpacity: 0.3,
 	recenters: true
 });
-````
+```
 
 Each of these options may be changed after initializing:
 
-````js
+```js
 ripple.center = true;
 ripple.opacityDecayVelocity = 0.7;
-````
+```
 **NOTE:** Changing of `$`, `$background` or `$waves` after initialization not recommended.
 
 ### Styling
 
 Use CSS color property to style the ripple:
 
-````css
+```css
 .paper-ripple {
 	color: #FF9800;
 }
-````
+```
 
 **NOTE:** CSS color property is inherited so it is not required to set it on the `.paper-ripple` directly.
 
 If you want to make the rippling effect within a circle, add `.paper-ripple--round` to main DOM element:
 
-````js
+```js
 var ripple = new PaperRipple();
 
 ripple.$.classList.add('paper-ripple--round').
-````
+```
 
 ## Browser Support
 
@@ -158,20 +159,20 @@ __NOTE:__ IE9 doesn't support `classList` on `HTMLElement` object and `requestAn
 
 Clone the repo:
 
-````sh
+```bash
 $ git clone https://github.com/virtyaluk/paper-ripple.git
-````
+```
 Install dependencies:
 
-````sh
+```bash
 $ npm install -g gulp && npm install
-````
+```
 
 Generate the docs:
 
-````sh
+```bash
 $ gulp docs
-````
+```
 
 Docs will be available under `docs` folder in the root of the project.
 
@@ -179,15 +180,15 @@ Docs will be available under `docs` folder in the root of the project.
 
 Install dependencies:
 
-````sh
+```bash
 $ npm install
-````
+```
 
 Run them:
 
-````sh
+```bash
 $ gulp test
-````
+```
 
 ## License
 
