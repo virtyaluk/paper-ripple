@@ -1,4 +1,5 @@
 {
+    "source": "./src/js",
     "destination": "./docs",
     "index": "./README.md",
     "package": "./package.json",
