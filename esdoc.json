@@ -1,7 +1,7 @@
 {
     "source": "./src/js",
     "destination": "./docs",
-    "index": "./README.md",
+    "index": "./readme.md",
     "package": "./package.json",
     "title": "PaperRipple",
     "unexportIdentifier": true,

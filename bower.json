@@ -2,7 +2,10 @@
     "name": "paper-ripple",
     "version": "0.1.0",
     "description": "Material Design Ripple effect in pure JS & CSS. PaperRipple lets you add a Material Design ripple effect to UI elements.",
-    "main": "dist/PaperRipple.js",
+    "main": [
+        "dist/PaperRipple.js",
+        "dist/paper-ripple.min.css"
+    ],
     "authors": [
         "virtyaluk <winsatana@gmail.com> (http://modern-dev.com/)"
     ],
