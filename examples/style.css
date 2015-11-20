@@ -1,0 +1,229 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+hr {
+    border-color: rgba(0, 0, 0, 0.1);
+    border-width: 1px 0 0 ;
+    width: 60%;
+    margin: 16px 20%;
+}
+
+.red {
+    background-color: #F44336 !important; }
+
+.red-text {
+    color: #F44336 !important; }
+
+.red-text svg {
+    fill: #F44336 !important;
+}
+
+.blue-text {
+    color: #2196F3 !important; }
+
+.blue-text svg {
+    fill: #2196F3 !important;
+}
+
+.green {
+    background-color: #4CAF50 !important; }
+
+.green-text {
+    color: #4CAF50 !important; }
+
+.green-text svg {
+    fill: #4CAF50 !important;
+}
+
+.orange-text {
+    color: #FF9800 !important; }
+
+.orange-text svg {
+    fill: #FF9800 !important;
+}
+
+.white-text {
+    color: #FFFFFF !important; }
+
+.white-text svg {
+    fill: #FFFFFF !important;
+}
+
+.main {
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fafafa;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+}
+
+.paper-card,
+.paper-button--raised,
+.paper-button--fab,
+.paper-button--fab-mini {
+    border-collapse: separate;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+    will-change: box-shadow;
+}
+
+.paper-card {
+    border-radius: 2px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 16px;
+}
+
+.paper-card.buttons-1 > button:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.buttons-1,
+.buttons-2 {
+    padding: 16px;
+}
+
+.buttons-1 {
+    max-width: 110px;
+}
+
+.buttons-2 > .paper-button--icon {
+    margin: auto 4px;
+}
+
+.paper-button {
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 36px;
+    min-width: 88px;
+    border-radius: 2px;
+    margin: 0 4px;
+    padding: 0 8px;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.paper-button svg {
+    fill: rgba(0, 0, 0, 0.87);
+}
+
+.paper-button__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.paper-button__icon svg {
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.paper-button--hover:hover,
+.paper-button--icon:hover {
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+.paper-button--hover.blue-text:hover,
+.paper-button--icon.blue-text:hover {
+    background-color: rgba(33, 150, 243, 0.2);
+}
+
+.paper-button--hover.orange-text:hover,
+.paper-button--icon.orange-text:hover {
+    background-color: rgba(255, 152, 0, 0.2);
+}
+
+.paper-button--hover.green-text:hover,
+.paper-button--icon.green-text:hover {
+    background-color: rgba(76, 175, 80, 0.2);
+}
+
+.paper-button--hover.red-text:hover,
+.paper-button--icon.red-text:hover {
+    background-color: rgba(244, 67, 54, 0.2);
+}
+
+.paper-button--fab,
+.paper-button--fab-mini,
+.paper-button--raised {
+    z-index: 2;
+}
+
+.paper-button--fab,
+.paper-button--fab-mini {
+    min-width: inherit !important;
+    min-height: inherit !important;
+    width: 56px;
+    height: 56px;
+    padding: 16px;
+}
+
+.paper-button--fab,
+.paper-button--fab-mini,
+.paper-button--icon {
+    border-radius: 50%;
+}
+
+.paper-button--fab-mini {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.paper-button--icon {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin: 0;
+}
+
+.paper-button--fab:active,
+.paper-button--fab-mini:active,
+.paper-button--raised:active {
+    -webkit-box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.image-card {
+    width: 240px;
+    height: 240px;
+    background: #eee center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF;
+}
