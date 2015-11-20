@@ -1,37 +1,45 @@
 {
-  "name": "paper-ripple",
-  "description": "Material Design Ripple effect in pure JS & CSS. PaperRipple lets you add a Material Design ripple effect to UI elements.",
-  "main": "dist/PaperRipple.js",
-  "authors": [
-    "virtyaluk <winsatana@gmail.com> (http://modern-dev.com/)"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "paper",
-    "paper",
-    "ui",
-    "paper",
-    "ripple",
-    "material",
-    "design",
-    "polymer",
-    "material",
-    "design",
-    "lite",
-    "mdl"
-  ],
-  "homepage": "https://github.com/virtyaluk/paper-ripple",
-  "moduleType": [
-    "amd",
-    "es6",
-    "globals",
-    "node"
-  ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+    "name": "paper-ripple",
+    "version": "0.1.0",
+    "description": "Material Design Ripple effect in pure JS & CSS. PaperRipple lets you add a Material Design ripple effect to UI elements.",
+    "main": "dist/PaperRipple.js",
+    "authors": [
+        "virtyaluk <winsatana@gmail.com> (http://modern-dev.com/)"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "paper",
+        "paper",
+        "ui",
+        "paper",
+        "ripple",
+        "material",
+        "design",
+        "polymer",
+        "material",
+        "design",
+        "lite",
+        "mdl"
+    ],
+    "homepage": "https://github.com/virtyaluk/paper-ripple",
+    "moduleType": [
+        "amd",
+        "es6",
+        "globals",
+        "node"
+    ],
+    "ignore": [
+        "**/.*",
+        ".idea/",
+        "node_modules/",
+        "bower_components/",
+        "test/",
+        ".codeclimate.yml",
+        ".eslintrc",
+        ".npmignore",
+        ".travis.yml",
+        "media/",
+        "docs/",
+        "examples/"
+    ]
 }
