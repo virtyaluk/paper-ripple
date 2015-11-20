@@ -5,6 +5,7 @@ PaperRipple
 
 </h1>
 
+[![Build Status](https://travis-ci.org/virtyaluk/paper-ripple.svg)](https://travis-ci.org/virtyaluk/paper-ripple) [![Code Climate](https://codeclimate.com/github/virtyaluk/paper-ripple/badges/gpa.svg)](https://codeclimate.com/github/virtyaluk/paper-ripple) [![Dependency Status](https://gemnasium.com/virtyaluk/paper-ripple.svg)](https://gemnasium.com/virtyaluk/paper-ripple)
 > Material Design Ripple effect in pure JS & CSS.
  
 **PaperRipple** lets you add a Material Design [ripple effect](https://www.google.com/design/spec/animation/responsive-interaction.html#responsive-interaction-surface-reaction) to UI elements.

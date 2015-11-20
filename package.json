@@ -1,55 +1,56 @@
 {
-    "name": "paper-ripple",
-    "version": "0.1.0",
-    "description": "Material Design Ripple effect in pure JS & CSS. PaperRipple lets you add a Material Design ripple effect to UI elements.",
-    "main": "dist/PaperRipple.js",
-    "homepage": "https://github.com/virtyaluk/paper-ripple",
-    "scripts": {
-        "test": "gulp ci --verbose"
-    },
-    "author": {
-        "name": "Bohdan Shtepan",
-        "email": "virtydev@yandex.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/virtyaluk/paper-ripple.git"
-    },
-    "bugs": {
-        "url": "https://github.com/virtyaluk/paper-ripple/issues"
-    },
-    "keywords": [
-        "paper",
-        "paper ui",
-        "paper ripple",
-        "material design",
-        "polymer",
-        "material design lite",
-        "mdl"
-    ],
-    "license": "MIT",
-    "devDependencies": {
-        "babel-core": "^6.1.20",
-        "babel-eslint": "^4.1.5",
-        "babel-preset-es2015": "^6.1.18",
-        "gulp": "^3.9.0",
-        "gulp-babel": "^6.1.0",
-        "gulp-eslint": "^1.1.0",
-        "gulp-sourcemaps": "^1.6.0",
-        "babel-plugin-transform-class-properties": "^6.1.20",
-        "babel-plugin-transform-es2015-modules-systemjs": "^6.1.18",
-        "babel-plugin-transform-es2015-modules-umd": "^6.1.18",
-        "chai": "^3.4.1",
-        "del": "^2.1.0",
-        "esdoc-es7-plugin": "0.0.3",
-        "gulp-concat": "^2.6.0",
-        "gulp-esdoc": "^0.1.0",
-        "gulp-header": "^1.7.1",
-        "gulp-iife": "^0.2.4",
-        "gulp-minify-css": "^1.2.1",
-        "gulp-mocha-phantomjs": "^0.10.1",
-        "gulp-rename": "^1.2.2",
-        "gulp-uglify": "^1.5.1",
-        "mocha": "^2.3.3"
-    }
+  "name": "paper-ripple",
+  "version": "0.1.0",
+  "description": "Material Design Ripple effect in pure JS & CSS. PaperRipple lets you add a Material Design ripple effect to UI elements.",
+  "main": "dist/PaperRipple.js",
+  "homepage": "https://github.com/virtyaluk/paper-ripple",
+  "scripts": {
+    "test": "gulp ci --verbose"
+  },
+  "author": {
+    "name": "Bohdan Shtepan",
+    "email": "virtydev@yandex.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/virtyaluk/paper-ripple.git"
+  },
+  "bugs": {
+    "url": "https://github.com/virtyaluk/paper-ripple/issues"
+  },
+  "keywords": [
+    "paper",
+    "paper ui",
+    "paper ripple",
+    "material design",
+    "polymer",
+    "material design lite",
+    "mdl"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.1.20",
+    "babel-eslint": "^4.1.5",
+    "babel-plugin-transform-class-properties": "^6.1.20",
+    "babel-plugin-transform-es2015-modules-systemjs": "^6.1.18",
+    "babel-plugin-transform-es2015-modules-umd": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "chai": "^3.4.1",
+    "del": "^2.1.0",
+    "esdoc-es7-plugin": "0.0.3",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-esdoc": "^0.2.0",
+    "gulp-eslint": "^1.1.0",
+    "gulp-header": "^1.7.1",
+    "gulp-iife": "^0.2.4",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-mocha-phantomjs": "^0.10.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "mocha": "^2.3.3",
+    "window.requestanimationframe": "^1.0.0"
+  }
 }
