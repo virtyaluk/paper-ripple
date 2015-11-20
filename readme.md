@@ -27,7 +27,7 @@ $ npm install paper-ripple --save
 
 ![](https://raw.githubusercontent.com/virtyaluk/paper-ripple/master/media/demo.gif)
 
-Live example at [codepen](http://codepen.io/virtyaluk/pen/BoMXKM).
+Live example at [codepen](http://codepen.io/virtyaluk/full/BoMXKM/).
 
 ## Usage
 
