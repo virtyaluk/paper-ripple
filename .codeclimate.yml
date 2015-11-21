@@ -1,0 +1,18 @@
+languages:
+   Ruby: true
+   JavaScript: true
+   Python: true
+   PHP: true
+exclude_paths:
+- "test/*"
+- "dist/*"
+- "examples/*"
+- "docs/*"
+engines:
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+ratings:
+   paths:
+   - src/**
