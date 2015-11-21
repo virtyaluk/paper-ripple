@@ -1,0 +1,12 @@
+/*
+ * This file/code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/virtyaluk/paper-ui
+ *
+ * Copyright (c) 2015 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+ {"version":3,"sources":["paper-ripple.css"],"names":[],"mappings":"iBAcA,cA8BA,kCADA,mCA2BA,mDACI,SAAU,OAzDd,cACI,QAAS,MACT,SAAU,SACV,IAAK,EACL,KAAM,EACN,MAAO,EACP,OAAQ,EACR,cAAe,QAEf,eAAgB,KA0BpB,kCADA,4CAiBA,+CACA,0CACI,cAAe,IAzCnB,wCAGA,kCADA,4CADA,mCAGI,eAAgB,KAChB,SAAU,SACV,IAAK,EACL,KAAM,EACN,MAAO,KACP,OAAQ,KAGZ,wCACA,kCACI,QAAS,EAab,wCACI,YAAa,QAAS,iBAG1B,kCACI,YAAa,QAAS,UAG1B,4CACI,YAAa","file":"paper-ripple.css","sourcesContent":["@charset \"UTF-8\";\r\n\r\n/**\r\n *  This file\\code is part of Paper UI project.\r\n *\r\n *  Paper UI - is a modern front-end framework based on Material Design by Google\r\n *  https://github.com/virtyaluk/paper-ui\r\n *\r\n *  Copyright (c) 2015 Bohdan Shtepan\r\n *  http://modern-dev.com/\r\n *\r\n *  Licensed under the MIT license.\r\n*/\r\n\r\n.paper-ripple {\r\n    display: block;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    border-radius: inherit;\r\n    overflow: hidden;\r\n    pointer-events: none;\r\n}\r\n\r\n.paper-ripple .paper-ripple__background,\r\n.paper-ripple .paper-ripple__waves,\r\n.paper-ripple .paper-ripple__wave-container,\r\n.paper-ripple .paper-ripple__wave {\r\n    pointer-events: none;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\n.paper-ripple .paper-ripple__background,\r\n.paper-ripple .paper-ripple__wave {\r\n    opacity: 0;\r\n}\r\n\r\n.paper-ripple .paper-ripple__waves,\r\n.paper-ripple .paper-ripple__wave {\r\n    overflow: hidden;\r\n}\r\n\r\n.paper-ripple .paper-ripple__wave-container,\r\n.paper-ripple .paper-ripple__wave {\r\n    border-radius: 50%;\r\n}\r\n\r\n.paper-ripple .paper-ripple__background {\r\n    will-change: opacity, background-color;\r\n}\r\n\r\n.paper-ripple .paper-ripple__wave {\r\n    will-change: opacity, transform;\r\n}\r\n\r\n.paper-ripple .paper-ripple__wave-container {\r\n    will-change: transform;\r\n}\r\n\r\n.paper-ripple--round .paper-ripple__background,\r\n.paper-ripple--round .paper-ripple__waves {\r\n    border-radius: 50%;\r\n}\r\n\r\n.paper-ripple--round .paper-ripple__wave-container {\r\n    overflow: hidden;\r\n}"],"sourceRoot":"/source/"}
