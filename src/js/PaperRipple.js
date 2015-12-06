@@ -26,6 +26,7 @@ class PaperRipple {
      * @param {Number} [cfg.opacityDecayVelocity=0.8] - How fast (opacity per second) the wave fades out.
      * @param {Boolean} [cfg.recenters=false] - If `true`, waves will exhibit a gravitational pull towards the center of their container as they fade away.
      * @param {Boolean} [cfg.center=false] - If `true`, waves will center inside its container.
+     * @param {Boolean} [cfg.round=false] - TODO:
      * @param {Element} [cfg.target=null] - Target DOM element as the container for the waves.
      * If target element is not presented, then new one will be created automatically.
      * @returns {PaperRipple} The new instance of a class.
@@ -48,7 +49,7 @@ class PaperRipple {
      * );
      */
     constructor(cfg) {
-        let { initialOpacity = 0.25, opacityDecayVelocity = 0.8, recenters = false, center = false, target = null } = cfg || {};
+        let { initialOpacity = 0.25, opacityDecayVelocity = 0.8, recenters = false, center = false, round = false, target = null } = cfg || {};
 
         /**
          * Gets or sets the initial opacity of the each wave.
@@ -83,6 +84,12 @@ class PaperRipple {
          * @private
          */
         this.center = center || this.center;
+        
+        /**
+         * @type {Boolean}
+         * @private
+         */
+        this.round = round || this.round;
 
         return this;
     }
@@ -123,6 +130,25 @@ class PaperRipple {
      */
     set center(newValue) {
         this.$[newValue ? 'setAttribute' : 'removeAttribute']('center', '');
+    }
+
+    /**
+     * TODO:
+     * 
+     * @returns {Boolean} TODO:
+     */
+    get round() {
+        return this.$.classList.contains('paper-ripple--round');
+    }
+    
+    /**
+     * TODO:
+     * 
+     * @param {Boolean} [newValue=false] - TODO:
+     * @returns {void} Nothing.
+     */
+    set round(newValue) {
+        this.$.classList.toggle('paper-ripple--round', newValue);
     }
 
     /**
