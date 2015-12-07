@@ -26,7 +26,7 @@ class PaperRipple {
      * @param {Number} [cfg.opacityDecayVelocity=0.8] - How fast (opacity per second) the wave fades out.
      * @param {Boolean} [cfg.recenters=false] - If `true`, waves will exhibit a gravitational pull towards the center of their container as they fade away.
      * @param {Boolean} [cfg.center=false] - If `true`, waves will center inside its container.
-     * @param {Boolean} [cfg.round=false] - TODO:
+     * @param {Boolean} [cfg.round=false] - If `true`, ripple effect will apply within a circle.
      * @param {Element} [cfg.target=null] - Target DOM element as the container for the waves.
      * If target element is not presented, then new one will be created automatically.
      * @returns {PaperRipple} The new instance of a class.
@@ -133,18 +133,18 @@ class PaperRipple {
     }
 
     /**
-     * TODO:
+     * Determines whether ripple effect should apply within a circle.
      * 
-     * @returns {Boolean} TODO:
+     * @returns {Boolean} If `true`, ripple effect will apply within a circle.
      */
     get round() {
         return this.$.classList.contains('paper-ripple--round');
     }
     
     /**
-     * TODO:
+     * Sets the value that indicates whether ripple effect should apply within a circle.
      * 
-     * @param {Boolean} [newValue=false] - TODO:
+     * @param {Boolean} [newValue=false] - The new value.
      * @returns {void} Nothing.
      */
     set round(newValue) {
