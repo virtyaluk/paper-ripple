@@ -1,7 +1,7 @@
 <h1 align="center">
 	<img width="256" src="https://raw.githubusercontent.com/virtyaluk/paper-ripple/master/media/paper-ripple.png" alt="mutation-watcher" style="clear: right;">
 <br/>
-PaperRipple
+PaperRipple v0.2.0
 
 </h1>
 
@@ -107,6 +107,7 @@ Or you may pass object containing next options:
 * `opacityDecayVelocity`: *Number* - Defaults to `0.8`. How fast (opacity per second) the wave fades out.
 * `recenters`: *Boolean* - Defaults to `false`. If `true`, waves will exhibit a gravitational pull towards the center of their container as they fade away.
 * `center`: *Boolean* - Defaults to `false`. If `true`, waves will center inside its container.
+* `round`: *Boolean* - Defaults to `false`. If `true`, ripple effect will apply within a circle.
 * `target`: *HTMLElement* - Defaults to `null`. Target DOM element as the container for the waves.
 
 ```js
@@ -135,14 +136,6 @@ Use CSS color property to style the ripple:
 ```
 
 **NOTE:** CSS color property is inherited so it is not required to set it on the `.paper-ripple` directly.
-
-If you want to make the rippling effect within a circle, add `.paper-ripple--round` to main DOM element:
-
-```js
-var ripple = new PaperRipple();
-
-ripple.$.classList.add('paper-ripple--round').
-```
 
 ## Browser Support
 
@@ -190,6 +183,12 @@ Run them:
 ```bash
 $ gulp test
 ```
+
+## Changelog
+
+### 0.2.0 (December 07, 2015)
+* Added new `round` property on main `PaperRipple` class.
+
 
 ## License
 
