@@ -365,6 +365,8 @@ System.register('PaperRipple', [], function (_export) {
                     var recenters = _ref4$recenters === undefined ? false : _ref4$recenters;
                     var _ref4$center = _ref4.center;
                     var center = _ref4$center === undefined ? false : _ref4$center;
+                    var _ref4$round = _ref4.round;
+                    var round = _ref4$round === undefined ? false : _ref4$round;
                     var _ref4$target = _ref4.target;
                     var target = _ref4$target === undefined ? null : _ref4$target;
                     this.initialOpacity = initialOpacity;
@@ -375,6 +377,7 @@ System.register('PaperRipple', [], function (_export) {
 
                     this.recenters = recenters || this.recenters;
                     this.center = center || this.center;
+                    this.round = round || this.round;
                     return this;
                 }
 
@@ -490,6 +493,14 @@ System.register('PaperRipple', [], function (_export) {
                     },
                     set: function set(newValue) {
                         this.$[newValue ? 'setAttribute' : 'removeAttribute']('center', '');
+                    }
+                }, {
+                    key: 'round',
+                    get: function get() {
+                        return this.$.classList.contains('paper-ripple--round');
+                    },
+                    set: function set(newValue) {
+                        this.$.classList.toggle('paper-ripple--round', newValue);
                     }
                 }, {
                     key: 'shouldKeepAnimating',

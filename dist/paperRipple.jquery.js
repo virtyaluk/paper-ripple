@@ -682,6 +682,7 @@ var PaperRipple = (function () {
      * @param {Number} [cfg.opacityDecayVelocity=0.8] - How fast (opacity per second) the wave fades out.
      * @param {Boolean} [cfg.recenters=false] - If `true`, waves will exhibit a gravitational pull towards the center of their container as they fade away.
      * @param {Boolean} [cfg.center=false] - If `true`, waves will center inside its container.
+     * @param {Boolean} [cfg.round=false] - If `true`, ripple effect will apply within a circle.
      * @param {Element} [cfg.target=null] - Target DOM element as the container for the waves.
      * If target element is not presented, then new one will be created automatically.
      * @returns {PaperRipple} The new instance of a class.
@@ -717,6 +718,8 @@ var PaperRipple = (function () {
         var recenters = _ref4$recenters === undefined ? false : _ref4$recenters;
         var _ref4$center = _ref4.center;
         var center = _ref4$center === undefined ? false : _ref4$center;
+        var _ref4$round = _ref4.round;
+        var round = _ref4$round === undefined ? false : _ref4$round;
         var _ref4$target = _ref4.target;
         var target = _ref4$target === undefined ? null : _ref4$target;
 
@@ -754,6 +757,12 @@ var PaperRipple = (function () {
          * @private
          */
         this.center = center || this.center;
+
+        /**
+         * @type {Boolean}
+         * @private
+         */
+        this.round = round || this.round;
 
         return this;
     }
@@ -964,6 +973,29 @@ var PaperRipple = (function () {
         ,
         set: function set(newValue) {
             this.$[newValue ? 'setAttribute' : 'removeAttribute']('center', '');
+        }
+
+        /**
+         * Determines whether ripple effect should apply within a circle.
+         * 
+         * @returns {Boolean} If `true`, ripple effect will apply within a circle.
+         */
+
+    }, {
+        key: 'round',
+        get: function get() {
+            return this.$.classList.contains('paper-ripple--round');
+        }
+
+        /**
+         * Sets the value that indicates whether ripple effect should apply within a circle.
+         * 
+         * @param {Boolean} [newValue=false] - The new value.
+         * @returns {void} Nothing.
+         */
+        ,
+        set: function set(newValue) {
+            this.$.classList.toggle('paper-ripple--round', newValue);
         }
 
         /**
