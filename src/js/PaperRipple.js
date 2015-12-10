@@ -84,7 +84,7 @@ class PaperRipple {
          * @private
          */
         this.center = center || this.center;
-        
+
         /**
          * @type {Boolean}
          * @private
@@ -134,16 +134,16 @@ class PaperRipple {
 
     /**
      * Determines whether ripple effect should apply within a circle.
-     * 
+     *
      * @returns {Boolean} If `true`, ripple effect will apply within a circle.
      */
     get round() {
         return this.$.classList.contains('paper-ripple--round');
     }
-    
+
     /**
      * Sets the value that indicates whether ripple effect should apply within a circle.
-     * 
+     *
      * @param {Boolean} [newValue=false] - The new value.
      * @returns {void} Nothing.
      */
