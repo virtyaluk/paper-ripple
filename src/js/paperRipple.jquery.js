@@ -33,6 +33,6 @@ $.fn.paperRipple = function(options) {
         ev['mousedown ' + _touchEvents.down] = function(e) { ripple.downAction(e); };
         ev['mouseup ' + _touchEvents.up] = function() { ripple.upAction(); };
 
-        $(this).prepand(ripple.$).on(ev);
+        $(this).prepend(ripple.$).on(ev);
     });
 };
