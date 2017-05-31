@@ -166,6 +166,7 @@ class PaperRipple {
      * @private
      */
     _initTarget(target = null) {
+        // eslint-disable-next-line no-use-before-define
         let _doc = _doc || window.document;
 
         if (!this.$) {

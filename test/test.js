@@ -9,6 +9,7 @@ describe('PaperRipple', function() {
         this.mockDiv.style.position = 'relative';
         this.mockDiv.style.color = 'red';
         this.mockDiv.appendChild(this.ripple.$);
+        this.HTMLElement = HTMLElement.prototype.constructor;
     });
 
     it('should be globally available', function() {
@@ -37,9 +38,9 @@ describe('PaperRipple', function() {
     });
 
     it('should be initialized with default-created DOM element if none wasn\'t presented', function() {
-        this.ripple.$.should.be.an.instanceOf(HTMLElement);
-        this.ripple.$background.should.be.an.instanceOf(HTMLElement);
-        this.ripple.$waves.should.be.an.instanceOf(HTMLElement);
+        this.ripple.$.should.be.an.instanceOf(this.HTMLElement);
+        this.ripple.$background.should.be.an.instanceOf(this.HTMLElement);
+        this.ripple.$waves.should.be.an.instanceOf(this.HTMLElement);
     });
 
     it('should not have waves after initialization', function() {
@@ -72,8 +73,8 @@ describe('PaperRipple', function() {
             });
 
             it('should have own DOM representation', function() {
-                this.wave.$.should.be.an.instanceOf(HTMLElement);
-                this.wave.$wave.should.be.an.instanceOf(HTMLElement);
+                this.wave.$.should.be.an.instanceOf(this.HTMLElement);
+                this.wave.$wave.should.be.an.instanceOf(this.HTMLElement);
             });
 
             it('should be in touchDown state', function() {

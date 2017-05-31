@@ -369,12 +369,10 @@ class PaperWave {
         this.resetDefaults();
 
         this.touchDownStarted = _now();
-        this.startPosition = this.center || !event ?
-            containerCenter :
-            {
-                x: (event.clientX || event.x) - this.containerRect.boundingRect.left,
-                y: (event.clientY || event.y) - this.containerRect.boundingRect.top
-            };
+        this.startPosition = this.center || !event ? containerCenter : {
+            x: (event.clientX || event.x) - this.containerRect.boundingRect.left,
+            y: (event.clientY || event.y) - this.containerRect.boundingRect.top
+        };
         this.endPosition = this.recenters ? containerCenter : this.endPosition;
         this.maxRadius = this.containerRect.distanceToFarthestCorner(this.startPosition);
 
