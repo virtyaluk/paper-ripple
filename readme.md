@@ -1,7 +1,7 @@
 <h1 align="center">
 	<img width="256" src="https://raw.githubusercontent.com/virtyaluk/paper-ripple/master/media/paper-ripple.png" alt="mutation-watcher" style="clear: right;">
 <br/>
-PaperRipple v0.2.0
+PaperRipple v0.3.0
 
 </h1>
 
@@ -10,7 +10,7 @@ PaperRipple v0.2.0
  
 **PaperRipple** lets you add a Material Design [ripple effect](https://www.google.com/design/spec/animation/responsive-interaction.html#responsive-interaction-surface-reaction) to UI elements.
 
-## Install
+## :dvd: Install
 
 ##### Bower:
 
@@ -29,7 +29,7 @@ $ npm install paper-ripple --save
 
 Live example at [codepen](http://codepen.io/virtyaluk/full/BoMXKM/).
 
-## Usage
+## :clipboard: Usage
 
 First, you need to include **PaperRipple** JS and CSS files to your HTML-page.
 
@@ -137,7 +137,7 @@ Use CSS color property to style the ripple:
 
 **NOTE:** CSS color property is inherited so it is not required to set it on the `.paper-ripple` directly.
 
-## Browser Support
+## :green_book: Browser Support
 
 - Chrome
 - Firefox
@@ -147,7 +147,7 @@ Use CSS color property to style the ripple:
 
 __NOTE:__ IE9 doesn't support `classList` on `HTMLElement` object and `requestAnimationFrame`. You need to polyfill it. My choice: classList - [`bower install classlist`](https://github.com/components/classList.js) or [`npm install classlist-polyfill`](https://github.com/yola/classlist-polyfill); requestAnimationFrame - [`bower install window.requestanimationframe`](https://github.com/Polyfiller/window.requestAnimationFrame) or [`npm install window.requestanimationframe`](https://github.com/Polyfiller/window.requestAnimationFrame).
 
-## Docs
+## :mortar_board: Docs
 
 **PaperRipple** JS has an excellent documentation. [Esdoc](https://github.com/nanopx/gulp-esdoc) is used to generate it. To generate it by yourself do following:
 
@@ -184,15 +184,20 @@ Run them:
 $ gulp test
 ```
 
-## Changelog
+## :calendar: Changelog
 
 ### 0.2.0 (December 07, 2015)
 * Added new `round` property on main `PaperRipple` class.
 
+### 0.3.0 (June 01, 2017)
+* Fixes typo in jQuery plugin code.
+* Fixes [support of IE browsers](https://github.com/virtyaluk/paper-ripple/issues/1).
 
-## License
+## :green_book: License
 
-MIT
+[Licensed under the MIT license.](https://github.com/virtyaluk/paper-ripple/blob/master/LICENSE)
+
+Copyright (c) 2017 Bohdan Shtepan
 
 ---
 
