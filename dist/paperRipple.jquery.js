@@ -1058,7 +1058,7 @@ $.fn.paperRipple = function (options) {
       ripple.upAction();
     };
 
-    $(this).prepand(ripple.$).on(ev);
+    $(this).prepend(ripple.$).on(ev);
   });
 };
 //# sourceMappingURL=paperRipple.jquery.js.map

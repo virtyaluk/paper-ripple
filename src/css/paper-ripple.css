@@ -65,9 +65,9 @@
 
 .paper-ripple--round .paper-ripple__background,
 .paper-ripple--round .paper-ripple__waves {
-    border-radius: 50%;
+    border-radius: inherit;
 }
 
 .paper-ripple--round .paper-ripple__wave-container {
-    overflow: hidden;
+    overflow: visible;
 }
